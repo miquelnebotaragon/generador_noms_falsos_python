@@ -67,7 +67,7 @@ llista_noms = [fake.name() for _ in range(num_elements)]
 <p>· Mostram en pantalla un text on sol·licitam a l'usuari que indiqui la quantitat de noms i llinatges falsos que vol generar.</p>
 <p>· La segona variable s'emmagatzemarà de manera automàtica generant-se un llistat amb la quantitat indicada de noms falsos.</p>
 
-
+## Part 2:
 ```python
 
 # Execució:
