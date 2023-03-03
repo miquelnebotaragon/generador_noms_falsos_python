@@ -8,7 +8,8 @@
     <img alt="Twitter: Miquel Nebot" src="https://img.shields.io/twitter/follow/miquelnebot.svg?style=social" />
   </a>
 </p>
-<div align="center"><img src="https://user-images.githubusercontent.com/57944755/210279972-392516c7-5147-472a-9325-21bab75d3b9c.png"></div>
+<div align="center"><img src="https://user-images.githubusercontent.com/57944755/222732835-8c04b9fa-c89c-42fb-a12b-372d3d1638d0.png"></div>
+
 
 # 👁️‍🗨️ Introducció
 
