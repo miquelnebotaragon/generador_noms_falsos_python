@@ -39,7 +39,7 @@ user@kubuntu-mnebot:~$ sudo pip install faker
 
 # 👇 Descàrrega i execució
 Copiarem el codi següent 👇 a un arxiu amb extensió **.py** al nostre ordinador (per exemple **generar_noms_python.py**) per a la seva posterior execució: 
-<p></p>📝 Descàrrega de l'arxiu .py des d'<a href="https://github.com/miquelnebotaragon/generador_contrasenyes_python/blob/main/generar_contrasenyes_python.py" target="_blank">aquí</a>.
+<p></p>📝 Descàrrega de l'arxiu .py des d'<a href="https://github.com/miquelnebotaragon/generador_noms_falsos_python/blob/main/generar_noms_python.py" target="_blank">aquí</a>.
 
 # 🏆 Vull saber-ne més
 Desglossant el codi:
@@ -58,49 +58,27 @@ Aquesta és la part inicial i més senzilla:
 
 ```python
 
-# Presentació:
-print('\nBenvinguts al generador automàtic de contrasenyes!\n')
-
 # Variables:
-caracters_windows = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~@#_/+:'
-caracters_linux = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~@#_^*%/.+:;='
-numero_contrasenyes = int(input('Quantes contrasenyes vols generar? '))
-numero_caracters = int(input('Introdueix la llargària (número) de caràcters que vols que tengui... '))
-so = int(input('Finalment, és una contrasenya a emprar a un sistema Windows (1) o Linux (2)? (Si no ho tens clar tria l\'opció 1) '))
+num_elements = int(input("Introdueix la quantitat de noms i llinatges falsos a generar: "))
+llista_noms = [fake.name() for _ in range(num_elements)]
 
 ```
 
-<p>· Mostram en pantalla un text de benvinguda a l'aplicació. Acaba amb un caràcter d'escapada com és <b>\n</b> que ens possibilita fer un salt de línia.</p>
-<p>· Finalment, introduïm les 5 variables que necessitarem pel funcionament de l'aplicació: caracters per generar contrasenyes per a Windows (+ informació aquí: https://ibm.co/3jFcXlj), caràcters per a contrasenyes a Linux i derivats, número de contrasenyes a generar, número de caracters de cada contrasenya i, si volem que sigui per a un sistema operatiu o un altre.</p>
-<p>Com a curiositat indicar que és imprescindible que indiquem que els nombres són variables en format de número enter (int), d'altra manera no funcionarà el programa.</p>
+<p>· Mostram en pantalla un text on sol·licitam a l'usuari que indiqui la quantitat de noms i llinatges falsos que vol generar.</p>
+<p>· La segona variable s'emmagatzemarà de manera automàtica generant-se un llistat amb la quantitat indicada de noms falsos.</p>
 
-## Part 2:
 
 ```python
 
 # Execució:
-if so == 1:
-    for password_index in range(numero_contrasenyes):
-        contrasenyes = ""
-        
-        for index in range(numero_caracters):
-            contrasenyes = contrasenyes + random.choice(caracters_windows)
-        
-        print("{}".format(contrasenyes))
-    
-elif so == 2:
-    for password_index in range(numero_contrasenyes):
-        contrasenyes = ""
-        
-        for index in range(numero_caracters):
-            contrasenyes = contrasenyes + random.choice(caracters_linux)
-        
-        print("{}".format(contrasenyes))
+for elements in llista_noms:
+    print(elements)
 
-else:
-   print('Opció escollida desconeguda. Torna a repetir el procés!')
 ```
+
+<p>· Finalment procedim a l'execució del programa imprimint en pantalla el llistat emmagatzemat a la segona variable.</p>
+
 
 # ➕ Informació
 1️⃣ L'arxiu **.py** ha estat comentat al detall 👆 per tal de possibilitar l'anàlisi del seu funcionament.<p></p>
-2️⃣ Aquesta aplicació ha estat creada únicament amb finalitat d'estudi i divulgació. No em faig responsable dels possibles problemes ni prejudicis que pugui provocar el seu ús.<p></p>
+2️⃣ Aquesta aplicació ha estat creada únicament amb finalitat d'estudi i divulgació. No em faig responsable dels possibles problemes ni perjudicis que pugui provocar el seu ús.<p></p>
