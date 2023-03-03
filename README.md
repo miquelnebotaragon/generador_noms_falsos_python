@@ -24,7 +24,7 @@ Kubuntu 22.04
 ```console
 user@kubuntu-mnebot:~$ python3 -V
 ```
-Si no el tenim instal·lat, el podem aconseguir fàcilment mitjançant la comanda:
+Si no el tenim instal·lat, el podem aconseguir fàcilment amb la instrucció:
 ```console
 user@kubuntu-mnebot:~$ sudo apt install python3
 ```
