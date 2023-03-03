@@ -32,7 +32,7 @@ user@kubuntu-mnebot:~$ sudo apt install python3
 ```console
 user@kubuntu-mnebot:~$ sudo apt install python3-pip
 ```
-3. Instal·larem finalment els mòduls necessaris responsables de generar el codi QR sol·licitat:
+3. Instal·larem finalment els mòduls necessaris pel funcionament d'aquest programa de Python:
 ```console
 user@kubuntu-mnebot:~$ sudo pip install faker
 ```
